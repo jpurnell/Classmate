@@ -6,6 +6,7 @@ final class ClassmateTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(Classmate().text, "Hello, World!")
+        let result: Classmate = .fixture()
+        XCTAssertEqual(result.name, "first last")
     }
 }
