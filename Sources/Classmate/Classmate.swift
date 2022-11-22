@@ -5,7 +5,7 @@
 //  Created by Justin Purnell on 11/22/22.
 //
 
-public struct Classmate {
+public struct Classmate: Codable {
     let firstName: String
     let lastName: String
     var name: String  { return "\((preferredFirst != nil) ? preferredFirst! : firstName) \(lastName)"}
