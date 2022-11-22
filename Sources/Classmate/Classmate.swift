@@ -14,7 +14,7 @@ public struct Classmate {
     var phone: String?
     var addresses: [Address]?
 
-    static func fixture(_ firstName: String = "first",_ lastName: String = "last", email: String = "", phone: String = "", address: [Address] = [.fixture()]) -> Classmate {
+    public static func fixture(_ firstName: String = "first",_ lastName: String = "last", email: String = "", phone: String = "", address: [Address] = [.fixture()]) -> Classmate {
         return Classmate (firstName: firstName, lastName: lastName, email: email, phone: phone, addresses: address)
     }
 }
