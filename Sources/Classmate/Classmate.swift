@@ -6,10 +6,10 @@
 //
 
 public struct Classmate: Codable {
-    let firstName: String
-    let lastName: String
-    var name: String  { return "\((preferredFirst != nil) ? preferredFirst! : firstName) \(lastName)"}
-    var preferredFirst: String?
+    public let firstName: String
+    public let lastName: String
+    public var name: String  { return "\((preferredFirst != nil) ? preferredFirst! : firstName) \(lastName)"}
+    public var preferredFirst: String?
     var email: String?
     var phone: String?
     var addresses: [Address]?
