@@ -6,7 +6,7 @@
 //
 import Foundation
 
-public struct Classmate: Codable, Comparable, Identifiable {
+public struct Classmate: Codable, Comparable, Identifiable, Hashable {
     public static func < (lhs: Classmate, rhs: Classmate) -> Bool {
         return lhs.lastName < rhs.lastName && lhs.firstName < rhs.firstName && lhs.preferredFirst ?? "" < rhs.preferredFirst ?? ""
     }

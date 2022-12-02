@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct Address: Codable {
+public struct Address: Codable, Hashable {
+    var id: UUID = UUID()
     let street: String
     let street2: String?
     let city: String
